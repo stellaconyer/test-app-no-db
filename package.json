@@ -1,0 +1,5 @@
+{
+  "name": "test-app-no-db",
+  "private": true,
+  "dependencies": {}
+}

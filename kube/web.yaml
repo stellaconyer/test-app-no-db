@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: test-app-no-db
+  namespace: default
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        spec:
+          container:
+            image: #{YOUR IMAGE HERE}
+            env:
+              - name: TARGET
+                value: "Ruby Sample v1"
